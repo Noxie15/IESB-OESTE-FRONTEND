@@ -1,0 +1,126 @@
+/* src/components/DefaultButton/styles.module.css */
+
+/* =========================================================
+   BOTÃO BASE
+   ========================================================= */
+
+.button {
+  border: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 24rem;
+
+  padding: 1.2rem 2rem;
+
+  margin: 4.8rem 0;
+
+  cursor: pointer;
+
+  border-radius: 12px;
+
+  font-family: 'Share Tech Mono', monospace;
+
+  font-size: 1.6rem;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.08em;
+
+  font-weight: 700;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+
+  backdrop-filter: blur(10px);
+}
+
+/* =========================================================
+   ÍCONES
+   ========================================================= */
+
+.button svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+/* =========================================================
+   HOVER GLOBAL
+   ========================================================= */
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+/* =========================================================
+   BOTÃO INICIAR
+   ========================================================= */
+
+.green {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #a855f7
+  );
+
+  color: white;
+
+  box-shadow:
+    0 0 12px rgba(168, 85, 247, 0.4),
+    0 0 24px rgba(124, 58, 237, 0.25);
+}
+
+.green:hover {
+  box-shadow:
+    0 0 18px rgba(168, 85, 247, 0.8),
+    0 0 35px rgba(124, 58, 237, 0.5),
+    0 0 50px rgba(168, 85, 247, 0.3);
+
+  filter: brightness(1.1);
+}
+
+/* =========================================================
+   BOTÃO PARAR
+   ========================================================= */
+
+.red {
+  background: linear-gradient(
+    135deg,
+    #c026d3,
+    #ec4899
+  );
+
+  color: white;
+
+  box-shadow:
+    0 0 12px rgba(236, 72, 153, 0.4),
+    0 0 24px rgba(192, 38, 211, 0.25);
+}
+
+.red:hover {
+  box-shadow:
+    0 0 18px rgba(236, 72, 153, 0.8),
+    0 0 35px rgba(192, 38, 211, 0.5),
+    0 0 50px rgba(236, 72, 153, 0.3);
+
+  filter: brightness(1.1);
+}
+
+/* =========================================================
+   ESTADO DESABILITADO
+   ========================================================= */
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
