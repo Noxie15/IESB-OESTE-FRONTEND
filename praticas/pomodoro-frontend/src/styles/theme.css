@@ -1,0 +1,37 @@
+:root {
+  /* Tema Claro Rosa */
+
+  --background: #fff1f7;
+  --surface: #ffffff;
+  --text: #6b214d;
+
+  --primary: #ec4899;
+  --primary-light: #f472b6;
+
+  --border: rgba(236, 72, 153, 0.25);
+
+  --glow-1: rgba(236, 72, 153, 0.35);
+  --glow-2: rgba(244, 114, 182, 0.2);
+
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-border: rgba(236, 72, 153, 0.15);
+}
+
+[data-theme="dark"] {
+  /* Tema Escuro Roxo */
+
+  --background: #0f172a;
+  --surface: rgba(255, 255, 255, 0.05);
+  --text: #f8fafc;
+
+  --primary: #a855f7;
+  --primary-light: #c084fc;
+
+  --border: rgba(168, 85, 247, 0.25);
+
+  --glow-1: rgba(168, 85, 247, 0.9);
+  --glow-2: rgba(124, 58, 237, 0.7);
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(168, 85, 247, 0.25);
+}
