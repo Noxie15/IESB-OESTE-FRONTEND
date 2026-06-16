@@ -1,0 +1,68 @@
+/* src/components/Menu/styles.module.css */
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1.6rem;
+}
+
+.menuLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.2rem;
+
+  text-decoration: none;
+
+  color: #f8fafc;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(168, 85, 247, 0.25);
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+
+  transition: all 0.3s ease;
+
+  box-shadow:
+    0 0 10px rgba(168, 85, 247, 0.15),
+    0 0 20px rgba(124, 58, 237, 0.08);
+}
+
+.menuLink:hover {
+  transform: translateY(-3px);
+
+  color: #ffffff;
+
+  border-color: rgba(168, 85, 247, 0.8);
+
+  box-shadow:
+    0 0 15px rgba(168, 85, 247, 0.5),
+    0 0 30px rgba(168, 85, 247, 0.25);
+}
+
+.menuLink:active {
+  transform: translateY(0);
+}
+
+.menuLink svg {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  color: #a855f7;
+
+  transition: all 0.3s ease;
+}
+
+.menuLink:hover svg {
+  color: #c084fc;
+
+  filter:
+    drop-shadow(0 0 6px rgba(168, 85, 247, 0.8))
+    drop-shadow(0 0 12px rgba(168, 85, 247, 0.4));
+}

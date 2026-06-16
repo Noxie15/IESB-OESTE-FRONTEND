@@ -1,0 +1,96 @@
+/* src/components/DefaultInput/styles.module.css */
+
+.input {
+  /* =========================================================
+     ESTRUTURA ORIGINAL
+     ========================================================= */
+  background: rgba(255, 255, 255, 0.04);
+
+  text-align: center;
+
+  font-size: 1.8rem;
+
+  padding: 1rem 1.4rem;
+
+  color: var(--text-default);
+
+  outline: none;
+
+  border: 0.2rem solid transparent;
+
+  border-bottom: 0.2rem solid #7c3aed;
+
+  transition: all 0.3s ease;
+
+  /* =========================================================
+     VISUAL ROXO FUTURISTA
+     ========================================================= */
+  font-family: 'Share Tech Mono', monospace;
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(8px);
+
+  box-shadow:
+    inset 0 0 8px rgba(255, 255, 255, 0.03);
+}
+
+/* =========================================================
+   ESTADO DE FOCO
+   ========================================================= */
+
+.input:focus {
+  border: 0.2rem solid #a855f7;
+
+  box-shadow:
+    0 0 10px rgba(168, 85, 247, 0.5),
+    0 0 20px rgba(168, 85, 247, 0.25);
+
+  background: rgba(255, 255, 255, 0.06);
+
+  transform: scale(1.02);
+}
+
+/* =========================================================
+   PLACEHOLDER
+   ========================================================= */
+
+.input::placeholder {
+  color: rgba(203, 213, 225, 0.6);
+
+  font-size: 1.4rem;
+
+  font-style: normal;
+
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* =========================================================
+   INPUT DESABILITADO
+   ========================================================= */
+
+.input:disabled {
+  border: 0.2rem solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  color: rgba(203, 213, 225, 0.4);
+
+  box-shadow: none;
+
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   REMOVE SETAS DOS INPUTS NUMBER
+   ========================================================= */
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input[type='number'] {
+  appearance: textfield;
+}
